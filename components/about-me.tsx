@@ -9,7 +9,7 @@ export default function AboutMeSection() {
 
     return (
         <div className="mx-auto max-w-6xl px-4 py-24 md:px-6">
-            <div className="relative overflow-hidden rounded-3xl bg-white/80 dark:bg-neutral-900/80 backdrop-blur-sm p-6 md:p-12 border border-neutral-200/20 dark:border-white/10 shadow-lg">
+            <div className="relative overflow-hidden rounded-3xl bg-neutral-100 dark:bg-neutral-900 p-6 md:p-12 border border-neutral-200/20 dark:border-white/10 shadow-lg">
                 <div className="grid items-center gap-10 md:grid-cols-2 md:gap-16">
                     {/* Left — quote & bio */}
                     <div>
@@ -28,7 +28,6 @@ export default function AboutMeSection() {
                             <p className="font-semibold tracking-tight">
                                 Ashrul Rifki Ardiyhasa
                             </p>
-                            <p className="text-sm tracking-tight">Backend Developer</p>
                         </div>
                     </div>
 

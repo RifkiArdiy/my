@@ -122,7 +122,7 @@ export const DATA = {
     {
       title: "Internify",
       href: "https://internify.dbsnetwork.my.id/",
-      dates: "Agustus 2023 - November 2024",
+      dates: "Mei 2025 - Juni 2025",
       active: true,
       description:
         "Internify is a modern Internship Management System designed to make the internship process easier, more structured, and more integrated.",
@@ -148,13 +148,13 @@ export const DATA = {
     {
       title: "Sibeta",
       href: "https://github.com/FirmanJK/Project_PBL",
-      dates: "",
+      dates: "September 2024 - Desember 2024",
       active: true,
       description:
         "With Sibeta, we try to simplify the management and submission of documents without any liability, making it easier for users (Students and Admins). This application is web-based, making it easy for users to access it anywhere and with any device.",
       technologies: [
         "PHP",
-        "MySQL",
+        "SQL Server",
         "Bootstrap",
         "JavaScript",
         "jQuery",

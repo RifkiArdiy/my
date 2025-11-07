@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import { Button } from "./ui/button";
+import { Moon, Sun } from "lucide-react";
 
 type ModeToggleProps = React.ComponentPropsWithoutRef<typeof Button>
 
@@ -16,9 +17,8 @@ export function ModeToggle() {
     return (
         <button
             onClick={toggleTheme}
-            className="p-2 rounded-full border border-gray-300 dark:border-gray-600 bg-white dark:bg-black text-black dark:text-white"
         >
-            {theme === "light" ? "🌞" : "🌜"}
+            {theme === "light" ? <Sun /> : <Moon />}
         </button>
     );
 }

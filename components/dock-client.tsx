@@ -1,6 +1,6 @@
 "use client";
 
-import { CalendarIcon, HomeIcon, MailIcon, PencilIcon } from "lucide-react";
+import { CalendarIcon, HomeIcon, MailIcon, Moon, PencilIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 import { Dock, DockIcon } from "@/components/magicui/dock";
+import { AnimatedThemeToggler } from "./ui/animated-theme-toggler";
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
@@ -141,8 +142,10 @@ export function DockDemo() {
                         <DockIcon>
                             <Tooltip>
                                 <TooltipTrigger asChild>
-                                    {/* <ModeToggle className="rounded-full" /> */}
-                                    <div className="rounded-full">
+                                    <div className={cn(
+                                        buttonVariants({ variant: "ghost", size: "icon" }),
+                                        "size-12 rounded-full",
+                                    )}>
                                         <ModeToggle />
                                     </div>
                                 </TooltipTrigger>
