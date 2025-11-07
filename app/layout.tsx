@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Dock, Search, Settings } from "lucide-react";
-import { DockIcon } from "@/components/magicui/dock";
-import Home from "./page";
 import { DockDemo } from "../components/dock-client";
 // import DockClient from "./components/dock-client";
 
