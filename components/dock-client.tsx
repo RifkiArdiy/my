@@ -16,7 +16,6 @@ import {
 } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 import { Dock, DockIcon } from "@/components/magicui/dock";
-import { AnimatedThemeToggler } from "./ui/animated-theme-toggler";
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
