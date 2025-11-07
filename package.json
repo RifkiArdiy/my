@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
-    "pages": "npm run build && shx touch out/.nojekyll"
+    "pages": "npm run build && shx touch out/.nojekyll",
+    "deploy": "npm run build && shx rm -rf docs && shx cp -r out docs && shx touch docs/.nojekyll && git add docs && git commit -m \"chore: update Pages in /docs\" && git push origin master"
+
   },
   "dependencies": {
     "@radix-ui/react-separator": "^1.1.7",

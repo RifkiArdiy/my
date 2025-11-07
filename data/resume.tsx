@@ -115,7 +115,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-       image: withBasePath("/images/upskilling.png"),
+      image: withBasePath("/images/upskilling.png"),
       video:
         "",
     },
@@ -141,7 +141,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/images/internify.png",
+      image: withBasePath("/images/internify.png"),
       video:
         "",
     },
@@ -166,7 +166,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: `${prefix}/images/sibeta2.png`,
+      image: withBasePath("/images/sibeta2.png"),
       video:
         "",
     },
@@ -192,7 +192,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: `${prefix}/images/talenhub.png`,
+      image: withBasePath("/images/talenhub.png"),
       video:
         "",
     },
@@ -217,7 +217,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: `${prefix}/images/personal.png`,
+      image: withBasePath("/images/personal.png"),
       video:
         "",
     },
