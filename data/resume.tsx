@@ -176,11 +176,12 @@ export const DATA = {
       description:
         "Talent Hub serves as a digital solution that enhances the efficiency of the recruitment process, helps users find their dream jobs quickly, and supports companies in acquiring the best candidates accurately and on time.",
       technologies: [
-        "JavaScript",
+        "Flutter",
+        "Dart",
+        "MongoDB",
         "NodeJS",
-        "NextJS",
-        "TailwindCSS",
-        "TypeScript",
+        "ExpressJS",
+        "RESTful API",
       ],
       links: [
         {
@@ -195,18 +196,17 @@ export const DATA = {
     },
     {
       title: "Personal Website",
-      href: "https://github.com/RifkiArdiy/Myporto",
+      href: "https://github.com/RifkiArdiy/my.git",
       dates: "",
       active: true,
       description:
         "This is my personal website where I showcase my projects, skills, and experiences.",
       technologies: [
-        "Flutter",
-        "Dart",
-        "MongoDB",
+        "JavaScript",
         "NodeJS",
-        "ExpressJS",
-        "RESTful API",
+        "NextJS",
+        "TailwindCSS",
+        "TypeScript",
       ],
       links: [
         {
