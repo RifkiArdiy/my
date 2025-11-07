@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+
 const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export const DATA = {
