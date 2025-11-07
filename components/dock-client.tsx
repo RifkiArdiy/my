@@ -66,23 +66,23 @@ const Icons = {
 const DATA = {
     navbar: [
         { href: "#", icon: HomeIcon, label: "Home" },
-        { href: "#", icon: PencilIcon, label: "Blog" },
+        // { href: "#", icon: PencilIcon, label: "Blog" },
     ],
     contact: {
         social: {
             GitHub: {
                 name: "GitHub",
-                url: "#",
+                url: "https://github.com/RifkiArdiy",
                 icon: Icons.github,
             },
             LinkedIn: {
                 name: "LinkedIn",
-                url: "#",
+                url: "https://www.linkedin.com/in/rifki-ardiy-917193266/",
                 icon: Icons.linkedin,
             },
             Email: {
                 name: "Send Email",
-                url: "#",
+                url: "mailto:ardiyrifki@gmail.com",
                 icon: Icons.email,
             },
         },
