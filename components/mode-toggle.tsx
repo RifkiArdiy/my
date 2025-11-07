@@ -1,6 +1,9 @@
 "use client";
 
 import * as React from "react";
+import { Button } from "./ui/button";
+
+type ModeToggleProps = React.ComponentPropsWithoutRef<typeof Button>
 
 export function ModeToggle() {
     const [theme, setTheme] = React.useState<"light" | "dark">("light");
