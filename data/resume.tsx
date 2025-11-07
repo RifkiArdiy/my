@@ -1,5 +1,6 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export const DATA = {
   name: "",
@@ -87,7 +88,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/images/linkid.jpg",
+      image: `${prefix}/images/linkid.jpg`,
       video:
         "",
     },
@@ -113,7 +114,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/images/upskilling.png",
+      image: `${prefix}/images/upskilling.png`,
       video:
         "",
     },
@@ -164,7 +165,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/images/sibeta2.png",
+      image: `${prefix}/images/sibeta2.png`,
       video:
         "",
     },
@@ -190,7 +191,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/images/talenhub.png",
+      image: `${prefix}/images/talenhub.png`,
       video:
         "",
     },
@@ -215,7 +216,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/images/personal.png",
+      image: `${prefix}/images/personal.png`,
       video:
         "",
     },
