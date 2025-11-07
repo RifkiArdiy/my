@@ -1,8 +1,4 @@
-import Image from "next/image";
-import { HeroSectionOne } from "../components/ui/hero";
-import { TextReveal } from "@/components/magicui/text-reveal";
 import { GridBackgroundDemo } from "@/components/grid-background";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import AboutMeSection from "@/components/about-me";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { ProjectCard } from "@/components/project-card";
