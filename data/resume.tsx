@@ -1,4 +1,5 @@
 import { Icons } from "@/components/icons";
+import { withBasePath } from "@/lib/asset";
 
 const prefix = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
@@ -88,7 +89,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: `${prefix}/images/linkid.jpg`,
+      image: withBasePath("/images/linkid.jpg"),
       video:
         "",
     },
@@ -114,7 +115,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: `${prefix}/images/upskilling.png`,
+       image: withBasePath("/images/upskilling.png"),
       video:
         "",
     },

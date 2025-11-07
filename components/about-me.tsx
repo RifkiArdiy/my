@@ -1,5 +1,6 @@
 "use client";
 
+import { withBasePath } from "@/lib/asset";
 import Image from "next/image";
 
 export default function AboutMeSection() {
@@ -37,7 +38,7 @@ export default function AboutMeSection() {
 
                         <div className="relative overflow-hidden rounded-2xl border border-neutral-400/40 dark:border-white/10 md:block">
                             <Image
-                                src={`${prefix}/images/rifki.jpg`} // gunakan prefix agar cocok dengan basePath di GitHub Pages
+                                src={withBasePath("/images/rifki.jpg")} // gunakan prefix agar cocok dengan basePath di GitHub Pages
                                 alt="Foto profil"
                                 width={800}
                                 height={800}
