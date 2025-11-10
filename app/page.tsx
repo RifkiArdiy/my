@@ -5,7 +5,6 @@ import { ProjectCard } from "@/components/project-card";
 import { DATA } from "@/data/resume";
 import TextType from "@/components/magicui/typing-animation";
 import Footer from "@/components/footer";
-import { Github, Linkedin, Mail } from "lucide-react";
 import { TextReveal } from "@/components/magicui/text-reveal";
 
 const BLUR_FADE_DELAY = 0.1;
@@ -92,14 +91,14 @@ export default function Home() {
       </section>
 
       <section>
-      <TextReveal>
-        "the plan/t in my hand. I have to risk everything that I have"
-      </TextReveal>
+        <TextReveal>
+          {'"the plan/t in my hand. I have to risk everything that I have"'}
+        </TextReveal>
       </section>
-
+      
       <section id="footer">
         <BlurFade delay={BLUR_FADE_DELAY * 8}>
-        <Footer />
+          <Footer />
         </BlurFade>
       </section>
     </div>
