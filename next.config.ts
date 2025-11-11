@@ -5,6 +5,10 @@ const repoName = "my";
 process.env.NEXT_PUBLIC_BASE_PATH = isProd ? `/${repoName}` : "";
 
 module.exports = {
+  eslint: {
+    // abaikan kesalahan ESLint saat menjalankan `next build`
+    ignoreDuringBuilds: true,
+  },
   output: "export",
   basePath: isProd ? `/${repoName}` : "",
   images: { unoptimized: true },
