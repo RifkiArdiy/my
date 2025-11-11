@@ -6,14 +6,26 @@ import { DATA } from "@/data/resume";
 import TextType from "@/components/magicui/typing-animation";
 import Footer from "@/components/footer";
 import { TextReveal } from "@/components/magicui/text-reveal";
+import Lanyard from "@/components/Lanyard";
+import Link from "next/link";
 
 const BLUR_FADE_DELAY = 0.1;
-
 
 export default function Home() {
   return (
     <div>
-      <section id="hero" className="min-h-screen flex items-center justify-center">
+      <section className="navbar">
+        <nav className="fixed top-0 left-0 w-full z-50">
+          <div className="max-w-6xl mx-10 flex items-center justify-between px-6 py-4">
+            <Link href="/" className="text-black dark:text-white font-bold text-lg">
+              My.
+            </Link>
+          </div>
+        </nav>
+      </section>
+
+      <section id="hero" className="relative min-h-screen flex items-center justify-center">
+        {/* LANYARD POSISI ATAS KANAN */}
         <div className="relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text py-8 text-4xl font-bold text-transparent sm:text-7xl text-center">
           <BlurFade delay={BLUR_FADE_DELAY * 8}>
             <TextType
@@ -25,7 +37,13 @@ export default function Home() {
             />
           </BlurFade>
         </div>
+
+        <div className="absolute top-0 right-4 w-[750px] h-[500px] pointer-events-none z-10">
+          <Lanyard position={[0, 0, 12.5]} gravity={[0, -40, 0]} />
+        </div>
+        {/* TEKS */}
       </section>
+
       <section id="background">
         <div className="space-y-12 w-full py-12">
           <GridBackgroundDemo />
@@ -95,7 +113,7 @@ export default function Home() {
           {'"the plan/t in my hand. I have to risk everything that I have"'}
         </TextReveal>
       </section>
-      
+
       <section id="footer">
         <BlurFade delay={BLUR_FADE_DELAY * 8}>
           <Footer />

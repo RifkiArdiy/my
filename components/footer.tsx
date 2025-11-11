@@ -1,5 +1,5 @@
 // components/footer.tsx
-import { Github, Linkedin, Mail } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
     return (
@@ -9,18 +9,6 @@ export default function Footer() {
                     <div className="text-sm text-muted-foreground max-h-24 overflow-hidden">
                         <div className="whitespace-pre-wrap">© {new Date().getFullYear()} Rifki Ardiy - Website All rights reserved</div>
                     </div>
-                </div>
-
-                <div className="flex items-center gap-4">
-                    <a href="https://github.com/username" target="_blank" rel="noreferrer" aria-label="GitHub" className="text-sm text-muted-foreground max-h-24 overflow-hidden">
-                        GITHUB
-                    </a>
-                    <a href="https://linkedin.com/in/username" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="text-sm text-muted-foreground max-h-24 overflow-hidden">
-                        LINKEDIN
-                    </a>
-                    <a href="mailto:email@example.com" aria-label="Email" className="text-sm text-muted-foreground max-h-24 overflow-hidden">
-                        EMAIL
-                    </a>
                 </div>
             </div>
         </footer>
