@@ -197,7 +197,7 @@ export const DATA = {
         "",
     },
     {
-      title: "Personal Website",
+      title: "My",
       href: "https://github.com/RifkiArdiy/my.git",
       dates: "",
       active: true,

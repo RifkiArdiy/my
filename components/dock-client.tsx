@@ -86,6 +86,7 @@ const DATA = {
             },
         },
     },
+    other: [{ label: "Theme", component: ModeToggle }],
 };
 
 export function DockDemo() {
@@ -115,7 +116,9 @@ export function DockDemo() {
                                 </Tooltip>
                             </DockIcon>
                         ))}
+
                         <Separator orientation="vertical" className="h-full" />
+
                         {Object.entries(DATA.contact.social).map(([name, social]) => (
                             <DockIcon key={name}>
                                 <Tooltip>
@@ -137,26 +140,33 @@ export function DockDemo() {
                                 </Tooltip>
                             </DockIcon>
                         ))}
+
                         <Separator orientation="vertical" className="h-full py-2" />
-                        <DockIcon>
-                            <Tooltip>
-                                <TooltipTrigger asChild>
-                                    <div className={cn(
-                                        buttonVariants({ variant: "ghost", size: "icon" }),
-                                        "size-12 rounded-full",
-                                    )}>
-                                        <ModeToggle />
-                                    </div>
-                                </TooltipTrigger>
-                                <TooltipContent>
-                                    <p>Theme</p>
-                                </TooltipContent>
-                            </Tooltip>
-                        </DockIcon>
+
+                        {/* Render item lain (seperti ModeToggle) — pastikan ada key */}
+                        {DATA.other.map((item) => (
+                            <DockIcon key={item.label}>
+                                <Tooltip>
+                                    <TooltipTrigger asChild>
+                                        <div
+                                            className={cn(
+                                                buttonVariants({ variant: "ghost", size: "icon" }),
+                                                "size-12 rounded-full flex items-center justify-center"
+                                            )}
+                                            aria-label={item.label}
+                                        >
+                                            <item.component />
+                                        </div>
+                                    </TooltipTrigger>
+                                    <TooltipContent>
+                                        <p>{item.label}</p>
+                                    </TooltipContent>
+                                </Tooltip>
+                            </DockIcon>
+                        ))}
                     </Dock>
                 </TooltipProvider>
             </div>
         </div>
     );
-
 }
